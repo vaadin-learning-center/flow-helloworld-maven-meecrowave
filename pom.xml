@@ -23,7 +23,7 @@
 
   <groupId>com.vaadin.tutorial</groupId>
   <artifactId>flow-helloworld-maven-meecrowave</artifactId>
-  <version>00.07.04-RPM</version>
+  <version>1.0.0-SNAPSHOT</version>
 
 
   <packaging>jar</packaging>
