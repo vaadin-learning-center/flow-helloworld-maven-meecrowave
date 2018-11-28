@@ -60,6 +60,9 @@ After this you can start the app invoking the main-method.
 The UI itself is quite easy. 
 There is only a button you can click.
 For every click, the counter will be increased.
+For more information about the routing (**@Route(""")**), have a look at the orig documentation
+[https://vaadin.com/docs/v10/flow/routing/tutorial-routing-annotation.html](https://vaadin.com/docs/v10/flow/routing/tutorial-routing-annotation.html)
+
 
 ```java
 @Route("")
