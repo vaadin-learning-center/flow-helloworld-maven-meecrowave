@@ -72,19 +72,20 @@
 
   <properties>
     <!--technical-->
-    <maven.compiler.release>10</maven.compiler.release>
-    <maven.compiler.target>10</maven.compiler.target>
-    <maven.compiler.source>10</maven.compiler.source>
+    <!--<maven.compiler.release>10</maven.compiler.release>-->
+    <maven.compiler.target>8</maven.compiler.target>
+    <maven.compiler.source>8</maven.compiler.source>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!--RapidPM-->
-    <rapidpm-functional-reactive.version>00.07.04-RPM</rapidpm-functional-reactive.version>
-    <rapidpm-dependencies.version>04.00.05-RPM</rapidpm-dependencies.version>
+    <rapidpm-functional-reactive.version>01.00.00-RPM</rapidpm-functional-reactive.version>
+    <rapidpm-dependencies.version>04.00.10-RPM</rapidpm-dependencies.version>
+    <rapidpm-logger-adapter.version>01.00.00-RPM</rapidpm-logger-adapter.version>
 
     <!--Vaadin-->
-    <vaadin.version>10.0.7</vaadin.version>
+    <vaadin.version>10.0.9</vaadin.version>
     <meecrowave.version>1.2.4</meecrowave.version>
 
   </properties>
@@ -125,8 +126,8 @@
   <dependencies>
     <dependency>
       <groupId>org.rapidpm</groupId>
-      <artifactId>rapidpm-dependencies-core-logger</artifactId>
-      <version>${rapidpm-dependencies.version}</version>
+      <artifactId>rapidpm-logger-adapter</artifactId>
+      <version>${rapidpm-logger-adapter.version}</version>
     </dependency>
 
     <dependency>
@@ -181,11 +182,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.1.0</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.2.2</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
