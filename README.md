@@ -7,6 +7,8 @@
 A nano project to start a Vaadin project. Perfect for Micro-UIs packed as fat jar in a docker image.
 This will be used in some  of the tutorial implementations.
 
+> All tutorials are available under [https://vaadin.com/tutorials](https://vaadin.com/tutorials)
+
 ## target of this project
 The target of this project is a minimal rampup time for a first hello world.
 Why we need one more HelloWorld? Well, the answer is quite easy. 

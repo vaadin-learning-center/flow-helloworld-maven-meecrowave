@@ -98,7 +98,7 @@
     </repository>
   </repositories>
 
-  <!-- Just to disable any accidential deployment to maven.central -->
+  <!-- Just to disable any accidental deployment to maven.central -->
   <distributionManagement>
     <repository>
       <id>localhost</id>
