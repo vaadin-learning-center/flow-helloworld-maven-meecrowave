@@ -80,13 +80,11 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!--RapidPM-->
-    <rapidpm-functional-reactive.version>01.00.00-RPM</rapidpm-functional-reactive.version>
-    <rapidpm-dependencies.version>04.00.10-RPM</rapidpm-dependencies.version>
-    <rapidpm-logger-adapter.version>01.00.00-RPM</rapidpm-logger-adapter.version>
+    <rapidpm-logger-adapter.version>01.00.01-RPM</rapidpm-logger-adapter.version>
 
     <!--Vaadin-->
-    <vaadin.version>10.0.9</vaadin.version>
-    <meecrowave.version>1.2.4</meecrowave.version>
+    <vaadin.version>13.0.2</vaadin.version>
+    <meecrowave.version>1.2.7</meecrowave.version>
 
   </properties>
 
@@ -128,12 +126,6 @@
       <groupId>org.rapidpm</groupId>
       <artifactId>rapidpm-logger-adapter</artifactId>
       <version>${rapidpm-logger-adapter.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.rapidpm</groupId>
-      <artifactId>rapidpm-functional-reactive</artifactId>
-      <version>${rapidpm-functional-reactive.version}</version>
     </dependency>
 
     <!--Infrastructure-->
