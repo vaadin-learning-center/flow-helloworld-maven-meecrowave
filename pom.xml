@@ -83,7 +83,7 @@
     <rapidpm-logger-adapter.version>01.00.01-RPM</rapidpm-logger-adapter.version>
 
     <!--Vaadin-->
-    <vaadin.version>13.0.2</vaadin.version>
+    <vaadin.version>13.0.3</vaadin.version>
     <meecrowave.version>1.2.7</meecrowave.version>
 
   </properties>
