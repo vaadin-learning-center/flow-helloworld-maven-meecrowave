@@ -83,18 +83,52 @@
     <rapidpm-logger-adapter.version>01.00.01-RPM</rapidpm-logger-adapter.version>
 
     <!--Vaadin-->
-    <vaadin.version>13.0.3</vaadin.version>
+<!--    <vaadin.version>13.0.3</vaadin.version>-->
+    <vaadin.version>14.0.0.beta2</vaadin.version>
     <meecrowave.version>1.2.7</meecrowave.version>
 
   </properties>
 
   <repositories>
     <repository>
-      <id>vaadin-addons</id>
+      <id>central</id>
+      <url>https://repo1.maven.org/maven2/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <!-- Repository used by many Vaadin add-ons -->
+    <repository>
+      <id>Vaadin Directory</id>
       <url>http://maven.vaadin.com/vaadin-addons</url>
-      <!--<url>http://maven.vaadin.com/</url>-->
+    </repository>
+    <!-- Repository needed for prerelease versions of Vaadin -->
+    <repository>
+      <id>Vaadin - Prereleases</id>
+      <url>https://maven.vaadin.com/vaadin-prereleases</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
     </repository>
   </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <url>https://repo1.maven.org/maven2/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+    <!-- Repository needed for prerelease versions of Vaadin -->
+    <pluginRepository>
+      <id>Vaadin - Prereleases</id>
+      <url>https://maven.vaadin.com/vaadin-prereleases</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
 
   <!-- Just to disable any accidental deployment to maven.central -->
   <distributionManagement>
@@ -174,6 +208,17 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.1.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+<!--              <addClasspath>true</addClasspath>-->
+<!--              <classpathPrefix>libs/</classpathPrefix>-->
+              <mainClass>
+                com.vaadin.tutorial.flow.helloworld.maven.meecrowave.BasicTestUIRunner
+              </mainClass>
+            </manifest>
+          </archive>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -198,15 +243,15 @@
         <version>${meecrowave.version}</version>
       </plugin>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.2.1</version>
-        <configuration>
-          <!-- das brauchts leider, sonst muessen wir ein web.xml tippen... -->
-          <failOnMissingWebXml>false</failOnMissingWebXml>
-        </configuration>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-war-plugin</artifactId>-->
+<!--        <version>3.2.1</version>-->
+<!--        <configuration>-->
+<!--          &lt;!&ndash; das brauchts leider, sonst muessen wir ein web.xml tippen... &ndash;&gt;-->
+<!--          <failOnMissingWebXml>false</failOnMissingWebXml>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
     </plugins>
   </build>
 
