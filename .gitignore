@@ -1,3 +1,12 @@
+package.json
+package-lock.json
+webpack.generated.js
+webpack.config.js
+
+node
+node_modules
+
+
 *.iml
 .idea/*
 _data/webdrivers/*
