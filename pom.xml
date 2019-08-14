@@ -22,9 +22,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.rapidpm</groupId>
-    <artifactId>rapidpm-vaadin-dependencies-v14</artifactId>
-    <version>04.01.06-RPM</version>
+    <groupId>com.github.vaadin-learning-center.vaadin-dependencies</groupId>
+    <artifactId>vaadin-dependencies-v14</artifactId>
+    <version>222bcc63</version>
   </parent>
 
   <groupId>com.vaadin.tutorial</groupId>
@@ -80,6 +80,13 @@
     <meecrowave.version>1.2.8</meecrowave.version>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+
   <!-- Just to disable any accidental deployment to maven.central -->
   <distributionManagement>
     <repository>
@@ -126,13 +133,6 @@
 
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
